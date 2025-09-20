@@ -38,5 +38,9 @@ for(let idx = 1; idx<testCaseToUse.length; idx++){
     }
 }
 
+if(distance === testCaseToUse.length){
+    distance = -1;
+}
+
 
 console.log("Input: ", testCaseToUse, "\nOutput: ", distance);
