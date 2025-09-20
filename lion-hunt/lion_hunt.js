@@ -33,6 +33,8 @@ for(let idx = 1; idx<testCaseToUse.length; idx++){
     } else{
         let currDistance = idx - idxToCompare-1;
         distance = currDistance < distance ? currDistance : distance;
+        charToCompare = testCaseToUse[idx];
+        idxToCompare = idx;
     }
 }
 
