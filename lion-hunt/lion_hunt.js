@@ -24,9 +24,16 @@ if(testCaseToUse[0] === "Z"){
 }
 
 for(let idx = 1; idx<testCaseToUse.length; idx++){
-    console.log(idx);
-    
+   
+    if(testCaseToUse[idx] === " "){
+        
+    } else if(testCaseToUse[idx] === charToCompare){
+        idxToCompare = idx
+    } else{
+        let currDistance = idx - idxToCompare-1;
+        console.log(currDistance);
+    }
 }
 
 
-// console.log("Input: ", testCaseToUse, "\nOutput: ", /* your result here */);
+// console.log("Input: ", testCaseToUse, "\nOutput: ", distance);
