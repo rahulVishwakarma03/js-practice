@@ -9,11 +9,11 @@ const testCase6 = "L  ZL Z";
 const testCase7 = "L ZL";
 const testCase8 = " L ZL";
 
-const testCaseToUse = testCase1;
+const testCaseToUse = testCase3;
 
 let charToCompare = "";
 let idxToCompare = -1;
-let distanceCounter = -1;
+let distance = -1;
 
 if(testCaseToUse[0] === "Z"){
     charToCompare = "Z";
@@ -23,9 +23,10 @@ if(testCaseToUse[0] === "Z"){
     idxToCompare = 0;
 }
 
-console.log(charToCompare, idxToCompare);
+for(let idx = 1; idx<testCaseToUse.length; idx++){
+    console.log(idx);
+    
+}
 
 
-
-
-//console.log("Input: ", testCaseToUse, "\nOutput: ", /* your result here */);
+// console.log("Input: ", testCaseToUse, "\nOutput: ", /* your result here */);
