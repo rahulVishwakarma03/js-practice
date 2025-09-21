@@ -1,5 +1,9 @@
-const str = "ab";
+const str = "abc";
 
-for(let i=0; i<str.length; i++){
-    console.log(str[i]);
+for(let startIndex=0; startIndex<str.length; startIndex++){
+    for(let endIndex = startIndex; endIndex<str.length; endIndex++){
+
+        console.log(startIndex, endIndex);
+       
+    }
 }
