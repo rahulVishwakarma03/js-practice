@@ -1,11 +1,13 @@
 const str = "abcd";
 
 for(let startIndex=0; startIndex<str.length; startIndex++){
-    for(let endIndex = startIndex; endIndex<str.length; endIndex++){
-        let substr = "";
-        for(let currIndex = startIndex; currIndex<=endIndex; currIndex++){
-            substr = substr + str[currIndex];
+    let substr = "";
+    let endIndex = startIndex;
+    for(let currIndex = startIndex; currIndex <= endIndex; currIndex++){
+        substr = substr + str[currIndex];
+        if(currIndex === endIndex && endIndex < str.length){
+            console.log(substr);
+            endIndex++;
         }
-        console.log(substr);
     }
 }
