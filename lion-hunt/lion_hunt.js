@@ -8,8 +8,10 @@ const testCase5 = "Z   Z   Z";
 const testCase6 = "L  ZL Z";
 const testCase7 = "L ZL";
 const testCase8 = " L ZL";
+const testCase9 = " L Z Z  L";
+const testCase10 = "  ";
 
-const testCaseToUse = testCase8;
+const testCaseToUse = testCase10;
 
 let charToCompare = "";
 let idxToCompare = -1;
