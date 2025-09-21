@@ -1,3 +1,5 @@
 const str = "ab";
 
-console.log("substrings of", str, "are a ,b ,ab");
+for(let i=0; i<str.length; i++){
+    console.log(str[i]);
+}
