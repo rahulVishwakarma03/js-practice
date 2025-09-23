@@ -1,17 +1,10 @@
-const str = "abcd";
+const superString = "abcd";
 
-let startIndex = 0;
-let substr = "";
-let endIndex = startIndex;
-for (let currIndex = startIndex; currIndex <= endIndex; currIndex++) {
-  substr = substr + str[currIndex];
-  if (currIndex === endIndex && endIndex < str.length) {
-    console.log(substr);
-    endIndex++;
-  } else if (endIndex === str.length && startIndex < str.length) {
-    startIndex = startIndex + 1;
-    currIndex = startIndex - 1;
-    substr = "";
-    endIndex = startIndex;
-  }
+for (let i = 0; i < superString.length; i++) {
+    let subString = superString[i];
+    console.log(subString);
+    for (let j = i + 1; j < superString.length; j++) {
+        subString += superString[j];
+        console.log(subString);
+    }
 }
